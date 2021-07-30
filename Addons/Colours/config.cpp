@@ -54,11 +54,11 @@ class CfgMarkerColors
 		color[] = {1,0,0,1};
 		scope = 2;
 	};
-	class ColorPink: Default
+	class ColorGrey: Default
 	{
 		name = "Command";
-		color[] = {1,0.412,0.706,1};
-		Scope = 2;
+		color[] = {0.5, 0.5, 0.5, 1};
+		scope = 2;
 	};
 	class ColorBlue: Default
 	{
@@ -78,10 +78,10 @@ class CfgMarkerColors
 		color[] = {0.471,0.318,0.663,1};
 		Scope = 2;
 	};
-	class ColorYellow: Default
+	class ColorPink: Default
 	{
 		name = "909 EAW";
-		color[] = {1,0.647,0,1};
+		color[] = {1,0.412,0.706,1};
 		Scope = 2;
 	};
 	class ColorAqua: Default
@@ -92,39 +92,54 @@ class CfgMarkerColors
 	};
 	class ColorBrown: Default
 	{
-		name = "BLUFOR";
-		color[] = {0,0.3,0.6,1};
-		Scope = 2;
+		name = "Brown";
+		color[] = {0.5, 0.25, 0, 1};
 	};
-	class ColorGrey: Default
+	class ColorOrange: Default
 	{
-		name = "OPFOR";
-		color[] = {0.5,0,0,1};
-		scope = 2;
+		name = "Orange";
+		color[] = {0.85, 0.4, 0, 1};
+	};
+	class ColorYellow: Default
+	{
+		name = "Yellow";
+		color[] = {0.85, 0.85, 0, 1};
 	};
 	class ColorWhite: Default
 	{
-		scope = 1;
+		name = "White";
+		color[] = {1, 1, 1, 1};
+		scope = 2;
 	};
 	class ColorWEST: Default
 	{
-		scope = 1;
+		name = "BLUFOR";
+		color[] = {"(profilenamespace getvariable ['Map_BLUFOR_R',0])", "(profilenamespace getvariable ['Map_BLUFOR_G',1])", "(profilenamespace getvariable ['Map_BLUFOR_B',1])", "(profilenamespace getvariable ['Map_BLUFOR_A',0.8])"};
+		scope = 2;
 	};
 	class ColorEAST: Default
 	{
-		scope = 1;
+		name = "OPFOR";
+		color[] = {"(profilenamespace getvariable ['Map_OPFOR_R',0])", "(profilenamespace getvariable ['Map_OPFOR_G',1])", "(profilenamespace getvariable ['Map_OPFOR_B',1])", "(profilenamespace getvariable ['Map_OPFOR_A',0.8])"};
+		scope = 2;
 	};
 	class ColorGUER: Default
 	{
-		scope = 1;
+		name = "Independent";
+		color[] = {"(profilenamespace getvariable ['Map_Independent_R',0])", "(profilenamespace getvariable ['Map_Independent_G',1])", "(profilenamespace getvariable ['Map_Independent_B',1])", "(profilenamespace getvariable ['Map_Independent_A',0.8])"};
+		scope = 2;
 	};
 	class ColorCIV: Default
 	{
-		scope = 1;
+		name = "Civilian";
+		color[] = {"(profilenamespace getvariable ['Map_Civilian_R',0])", "(profilenamespace getvariable ['Map_Civilian_G',1])", "(profilenamespace getvariable ['Map_Civilian_B',1])", "(profilenamespace getvariable ['Map_Civilian_A',0.8])"};
+		scope = 2;
 	};
 	class ColorUNKNOWN: Default
 	{
-		scope = 1;
+		name = "Unknown side";
+		color[] = {"(profilenamespace getvariable ['Map_Unknown_R',0])", "(profilenamespace getvariable ['Map_Unknown_G',1])", "(profilenamespace getvariable ['Map_Unknown_B',1])", "(profilenamespace getvariable ['Map_Unknown_A',0.8])"};
+		scope = 2;
 	};
 	class colorBLUFOR: ColorWEST
 	{
